@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@reference "../../index.css";
+
+.encabezado {
+ @apply h-xl flex items-center justify-between shadow bg-white text-gray-700 relative;
+ }
+.contenedor {
+    @apply flex items-center pl-4;
+} 
+
+.titulo {
+    @apply text-lg font-semibold text-gray-900 uppercase;
+}
+.logo2{
+    @apply flex items-center px-4 hover:bg-gray-200;
+}

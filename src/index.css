@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@theme {
+
+  --spacing-sm: 8px;
+
+  --spacing-md: 16px;
+
+  --spacing-lg: 24px;
+
+  --spacing-xl: 48px;
+  
+  --spacing-principal: 64px;
+}
+.tarjeta {
+  @apply  rounded-xl m-4 text-gray-700 text-xs mx-4  px-8 py-4 bg-white shadow-md dark:bg-gray-800 ;
+}
+
+.boton {
+  @apply text-sm font-bold py-1 px-4 rounded-full;
+}
+
+.boton--negro {
+  @apply text-white bg-gray-700 hover:bg-gray-800;
+}
+
+.boton--rojo {
+  @apply text-red-500 bg-gray-100 border border-red-500 hover:bg-red-500 hover:text-white;
+}
+
+.boton--gris {
+  @apply bg-gray-100 hover:bg-gray-200;
+}
+
+.label {
+  @apply block uppercase text-xs font-bold mb-6;
+}
+
+.input {
+  @apply bg-gray-100 w-full border rounded-xl p-2 focus:outline-none focus:bg-white focus:border-gray-500;
+}
+
+.botones {
+  @apply bg-gradient-to-r from-gray-700 via-gray-200 to-gray-200 px-4 py-3 flex justify-between;
+}
+
+.auth {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

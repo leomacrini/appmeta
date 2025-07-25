@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@reference "../../index.css";
+
+.meta{
+    @apply w-full flex p-2 justify-between;
+}
+.icono {
+    @apply w-8 h-8 rounded-full flex items-center justify-center bg-[#e0e0e0] shadow-inner border border-gray-200 text-xl;
+}
+.barra1{
+    @apply w-28 max-w-3xl h-2 rounded-full bg-[#e0e0e0] shadow-inner overflow-hidden;
+}
+.barra2{
+    @apply h-full bg-gradient-to-r from-[#cfd8dc] to-[#90a4ae] rounded-full shadow-md transition-all duration-500;
+}   

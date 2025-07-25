@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@reference "../../index.css";
+.principal {
+    height : calc(100vh - var(--spacing-principal));
+    @apply flex;
+}
+.aside {
+    @apply flex flex-col text-gray-700 bg-gray-100 shadow w-60 h-full ;
+}
+.main {
+    @apply w-full h-full overflow-scroll;
+}
+.logo {
+    @apply mr-2 h-10 w-10;
+}
