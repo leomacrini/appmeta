@@ -1,10 +1,11 @@
 import estilos from './Meta.module.css';
+import { Link } from "react-router";
 
-function Meta ({icono, detalles, periodo, eventos, completado, meta}) {
+function Meta ({id, icono, detalles, periodo, eventos, completado, meta}) {
     
     const porcentaje = meta > 0 ? Math.min((completado / meta) * 100, 100) : 0;
     return (
-      <div className={estilos.meta + " tarjeta"}>
+      <Link to={`/lista/${id}`} className={estilos.meta + " tarjeta"}>
         <div className="flex items-center">
           <div className={estilos.icono}>{icono}</div>
           <p className="text-xl ml-5 mr-10">
@@ -27,7 +28,7 @@ function Meta ({icono, detalles, periodo, eventos, completado, meta}) {
           </div>
           <button className="boton boton--gris">Completado</button>
         </div>
-      </div>
+      </Link>
     );
 }
 

@@ -1,0 +1,12 @@
+[
+      {
+    "id": "2",
+    "detalles": "Leer libros",
+    "periodo": "año",
+    "eventos": 6,
+    "icono": "📚",
+    "meta": 12,
+    "plazo": "2030-01-01",
+    "completado": 0
+  }
+]
